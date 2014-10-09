@@ -1,9 +1,9 @@
-#Chrome-Shark#
-###The best tool to cast Grooveshark on your TV###
+#Chrome-Shark
+###The best tool to cast Grooveshark on your TV
 
 This is my first Github project and it is still in developpement. 
 
-I'll publish my first version of the script very soon so that everyone enjoys Grooveshark on their TV :) !
+I'll publish my first version of the script very soon so that everyone enjoys Grooveshark on their TV !
 
 Here's what the application currently looks like : 
 
@@ -15,7 +15,8 @@ Here's what the application currently looks like :
 - Automatically update track information based on the currently playing song
 - Get the **Album Art** and **Artist bio summary** with the Last.fm API
 - Play/Pause, Next and Previous controls
-- Shortcut (`Esc`) and button for closing the app
+- Possibility to close Chrome-Shark using the `Esc` key or the `Close button` at the upper right of the screen
+- Regularly flip the interface horizontally to not burn pixels on your TV
 - User friendly interface
 
 ##TODO
@@ -31,4 +32,6 @@ Here's what the application currently looks like :
 
 
 ##Notes
-For the moment, the official page of this application is here : [Chrome-Shark](http://tareck117.github.io/chrome-shark) (which is also in developpement...)
+For the moment, the official page of this application is here : [Chrome-Shark](http://tareck117.github.io/chrome-shark) 
+
+(which is also in developpement...)
