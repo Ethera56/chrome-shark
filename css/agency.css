@@ -399,6 +399,9 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
+#features hr {
+  margin: 60px 0px;
+}
 #features .feature-header {
   margin-bottom: 17px;
 }
