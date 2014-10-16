@@ -278,7 +278,7 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .navbar-brand {
     font-size: 4em !important;
   }
@@ -394,7 +394,7 @@ section h3.section-subheading p.answer {
   margin-top: 10px;
   font-size: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section {
     padding: 100px 0;
   }
