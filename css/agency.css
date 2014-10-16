@@ -245,7 +245,7 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #aa4012;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-default .nav li.separator {
     border-bottom: 1px solid #adadad;
     border-right: 0;
