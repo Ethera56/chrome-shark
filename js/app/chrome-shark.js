@@ -1,19 +1,19 @@
 /*
-  Snippet to include the script as a Boomark :
+  Snippet to include as the anchor `href` :
   javascript:(function(){
-    if (chromeShark && !chromeShark.isUIVisible()) {
+    if (typeof chromeShark !== "undefined" && !chromeShark.isUIVisible()) {
       chromeShark.show();
     }
-    else if(chromeShark && chromeShark.isUIVisible()){
+    else if(typeof chromeShark !== "undefined" && chromeShark.isUIVisible()){
       chromeShark.close();
     }
     else{
-      document.body.appendChild(document.createElement('script')).src='tareck117.github.io/chrome-shark/js/app/chrome-shark.js';
+      document.body.appendChild(document.createElement('script')).src='http://tareck117.github.io/chrome-shark/js/app/chrome-shark.js';
     }
   })();
 
   //Minified
-  javascript:(function(){if(chromeShark&&!chromeShark.isUIVisible()){chromeShark.show()}else if(chromeShark&&chromeShark.isUIVisible()){chromeShark.close()}else{document.body.appendChild(document.createElement("script")).src="tareck117.github.io/chrome-shark/js/app/chrome-shark.js"}})()
+  javascript:(function(){if(typeof chromeShark!=="undefined"&&!chromeShark.isUIVisible()){chromeShark.show()}else if(typeof chromeShark!=="undefined"&&chromeShark.isUIVisible()){chromeShark.close()}else{document.body.appendChild(document.createElement("script")).src="http://tareck117.github.io/chrome-shark/js/app/chrome-shark.js"}})()
 */
 
 
