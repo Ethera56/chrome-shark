@@ -8,12 +8,12 @@
       chromeShark.close();
     }
     else{
-      document.body.appendChild(document.createElement('script')).src='http://tareck117.github.io/chrome-shark/js/app/chrome-shark.js';
+      document.body.appendChild(document.createElement('script')).src='http://tareck117.github.io/chrome-shark/js/app/chrome-shark.min.js';
     }
   })();
 
   //Minified
-  javascript:(function(){if(typeof chromeShark!=="undefined"&&!chromeShark.isUIVisible()){chromeShark.show()}else if(typeof chromeShark!=="undefined"&&chromeShark.isUIVisible()){chromeShark.close()}else{document.body.appendChild(document.createElement("script")).src="http://tareck117.github.io/chrome-shark/js/app/chrome-shark.js"}})()
+  javascript:(function(){if(typeof chromeShark!=="undefined"&&!chromeShark.isUIVisible()){chromeShark.show()}else if(typeof chromeShark!=="undefined"&&chromeShark.isUIVisible()){chromeShark.close()}else{document.body.appendChild(document.createElement("script")).src="http://tareck117.github.io/chrome-shark/js/app/chrome-shark.min.js"}})()
 */
 
 
