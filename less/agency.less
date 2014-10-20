@@ -63,10 +63,19 @@ h6 {
   margin: 0 auto;
 
 }
+
 .bg-light-gray {
   background-color: @gray-lighter;
-
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
 }
+
 .bg-darkest-gray {
   background-color: @gray-darkest;
 
@@ -354,28 +363,27 @@ section {
     font-style: italic;
     font-weight: 400;
     margin-bottom: 75px;
-    p.answer{
+    p.answer {
       margin-top: 10px;
       font-size: 20px;
     }
   }
 
 }
-
 @media(max-width:767px) {
   section {
     padding: 100px 0;
   }
-}
 
+}
 //Features Section
 #features {
   .service-heading {
     margin: 15px 0;
     text-transform: none;
   }
-  hr{
-    margin: 60px 0px;
+  hr {
+    margin: 60px 0;
   }
   .feature-header {
     margin-bottom: 17px;
