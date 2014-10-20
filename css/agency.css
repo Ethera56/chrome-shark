@@ -402,6 +402,9 @@ section h3.section-subheading p.answer {
   margin-top: 10px;
   font-size: 20px;
 }
+section .blue-twitter {
+  color: #56c6ff;
+}
 @media (max-width: 767px) {
   section {
     padding: 100px 0;
