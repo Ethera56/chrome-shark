@@ -19,7 +19,12 @@ body {
 }
 .text-primary {
   color: @brand-primary;
-
+}
+.text-alter {
+  color: @brand-alter;
+}
+.text-white {
+  color: white;
 }
 p {
   font-size: 17px;
@@ -283,49 +288,24 @@ header {
 
   }
   .chrome-cast-functionnalities {
+    margin-top:40px;
     img {
       margin: 20px;
-      &.grooveshark-logo {
-        width: 120px;
-        margin: 26px;
-      }
       &.chrome-logo {
-        width: 130px;
+        width: 70px;
       }
 
     }
-    i {
-      font-size: 90px;
+    i.arrow-right,
+    i.arrow-headphones, {
       margin-top: 40px;
-      color: @brand-alter;
+      color: @brand-primary;
     }
   }
 
 }
 @media(max-width:767px) {
   header {
-    .chrome-cast-functionnalities {
-      img {
-        &.grooveshark-logo {
-          width: 120px;
-          margin: 26px;
-        }
-        &.chrome-logo {
-          width: 130px;
-        }
-        margin: 20px;
-      }
-      i {
-        &.fa-arrow-down {
-          margin-top: -10px;
-          margin-bottom: -10px;
-        }
-        font-size: 90px;
-        margin-top: 40px;
-        color: @brand-alter;
-      }
-
-    }
     .intro-text {
       padding-top: 150px;
       padding-bottom: 100px;

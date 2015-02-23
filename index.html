@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chrome Shark is a JavaScript application that transforms Grooveshark into a great full screen music player to fit on your television.">
+  <meta name="description" content="Chrome Shark is a JavaScript application that transforms Grooveshark or Spotify into a great full screen music player to fit on your television.">
   <meta name="author" content="René-Pier Deshaies-Gélinas">
-  <meta property="og:image" content="http://i.imgur.com/XTmH098.jpg">
+  <meta property="og:image" content="http://i.imgur.com/U63reF7.jpg">
 
-  <title>Chrome Shark - The best tool to stream Grooveshark on your TV</title>
+  <title>Chrome Shark - The best tool to stream your music on your TV</title>
   <link rel="icon" type="image/png" href="img/logos/chrome-shark-logo-icon.png" />
 
   <!-- Bootstrap Core CSS -->
@@ -19,7 +19,7 @@
   <link href="css/agency.css" rel="stylesheet">
 
   <!-- Custom Fonts -->
-  <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -43,7 +43,7 @@
       a.async = 1;
       a.src = g;
       m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-55650509-1', 'auto');
     ga('require', 'displayfeatures');
@@ -54,7 +54,7 @@
 <body id="page-top" class="index">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top navbar navbar-shrink">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
@@ -64,7 +64,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">
+        <a class="navbar-brand page-scroll chrome-shark-logo" href="#page-top">
           <span class="logo-chrome">Chrome</span>
           <span class="logo-shark-alter">Shark</span>
         </a>
@@ -85,12 +85,6 @@
           <li class="">
             <a class="page-scroll" href="#about-team">About/Team</a>
           </li>
-          <li class="separator">
-            <a href="">&nbsp;</a>
-          </li>
-          <li class="sub-menu">
-            <a class="" href="#">FR (soon...)</a>
-          </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -103,21 +97,51 @@
     <div class="container">
       <div class="intro-text">
         <!-- <div class="intr#-lead-in">Welcome To Our Studio!</div> -->
-        <div class="intro-heading">The best tool to stream Grooveshark on your TV</div>
+        <div class="intro-heading">The best tool to stream music on your TV</div>
         <a href="#what-is-this" class="page-scroll btn btn-xl">Tell Me More</a>
         <div class="chrome-cast-functionnalities">
           <div class="row">
             <div class="col-md-2 col-md-offset-3">
-              <img class="grooveshark-logo" src="img/logos/grooveshark-orange.png" alt="Grooveshark">
+
+              <span class="fa-stack fa-4x feature-icon">
+
+                          <i class="fa fa-circle fa-stack-2x text-white"></i>
+
+                          <i class="fa fa-headphones fa-stack-1x text-primary"></i>
+
+            </span>
+
             </div>
             <div class="col-md-2 visible-md-block visible-lg-block">
-              <i class="fa fa-arrow-right fa-2x"></i>
+
+                            <span class="fa-stack fa-4x feature-icon">
+
+                                        <i class="fa fa-circle fa-stack-2x text-white"></i>
+
+                                        <i class="fa fa-arrow-right fa-stack-1x text-primary"></i>
+
+                          </span>
+
             </div>
             <div class="col-md-2 hidden-md hidden-lg">
-              <i class="fa fa-arrow-down fa-2x"></i>
+                                        <span class="fa-stack fa-4x feature-icon">
+
+                                                    <i class="fa fa-circle fa-stack-2x text-white"></i>
+
+                                                    <i class="fa fa-arrow-down fa-stack-1x text-primary"></i>
+
+                                      </span>
             </div>
             <div class="col-md-2">
-              <img class="chrome-logo" src="img/logos/chrome.png" alt="Grooveshark">
+
+                                          <span class="fa-stack fa-4x feature-icon">
+
+                                                      <i class="fa fa-circle fa-stack-2x text-white"></i>
+
+
+                                                      <img class="chrome-logo fa-stack-1x img-responsive text-primary" width="40px" src="img/icons/cast.png" alt="Chromecast">
+
+                                        </span>
             </div>
           </div>
         </div>
@@ -135,7 +159,9 @@
               <span class="logo-box">
                 <span class="logo-chrome">Chrome</span> <span class="logo-shark">Shark</span>
               </span>
-              is a JavaScript application that transforms <a href="http://grooveshark.com" target="_blank">Grooveshark</a> into a great full screen music player to fit on your television.
+              is a JavaScript application that transforms <a href="http://grooveshark.com" target="_blank">Grooveshark</a>
+              or <a href="http://play.spotify.com" target="_blank">Spotify</a>
+              into a great full screen music player to fit on your television.
           </h3>
         </div>
       </div>
@@ -149,7 +175,8 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Bookmarklet App</h2>
           <h3 class="section-subheading text-muted">
-            Simply drag and drop the following button to your bookmark bar, go to <a href="http://grooveshark.com" target="_blank">Grooveshark</a> and click on the
+            Simply drag and drop the following button to your bookmark bar, go to <a href="http://grooveshark.com" target="_blank">Grooveshark</a>
+            or <a href="http://play.spotify.com" target="_blank">Spotify</a> and click on the
               <span class="logo-box">
                 ♫ <span class="logo-chrome">Chrome</span> <span class="logo-shark">Shark</span>
               </span>
@@ -159,7 +186,7 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-md-offset-4 text-center">
-          <a href='javascript:(function(){if(typeof chromeShark!=="undefined"&&!chromeShark.isUIVisible()){chromeShark.show()}else if(typeof chromeShark!=="undefined"&&chromeShark.isUIVisible()){chromeShark.close()}else{document.body.appendChild(document.createElement("script")).src="http://tareck117.github.io/chrome-shark/js/app/chrome-shark.min.js"}})()'
+          <a href="javascript:(function(){if(typeof ChromeShark!="undefined"){if(window.chromeShark){window.chromeShark.ToggleShow()}else{window.chromeShark=new ChromeShark}}else{var url=location.protocol+"//tareck117.github.io/chrome-shark/js/app/1.1/chrome-shark.min.js";var script=document.createElement("script");script.setAttribute("language","JavaScript");script.setAttribute("src",url+"?rand="+(new Date).getTime());document.body.appendChild(script)}})()"
           class="btn btn-default bookmarklet-btn chrome-shark-button chrome-shark-button-lg" rel="sidebar" title="">
               ♫ Chrome Shark
           </a>
@@ -189,9 +216,10 @@
               </span>
             ?
             <p class="answer">
-              <i class="fa fa-quote-left"></i>
-                Because it is the perfect solution if your are using  <a href="http://grooveshark.com" target="_blank">Grooveshark</a> on a <a href="https://www.google.ca/chrome/devices/chromecast/" target="_blank">Google Chromecast</a> or your television.
-              <i class="fa fa-quote-right"></i>
+                Because it is the perfect solution if your are using  <a href="http://grooveshark.com" target="_blank">Grooveshark</a>
+                or <a href="http://play.spotify.com" target="_blank">Spotify</a>
+                on a <a href="https://www.google.ca/chrome/devices/chromecast/" target="_blank">Google Chromecast</a>
+                or your television.
             </p>
           </h3>
         </div>
@@ -227,7 +255,7 @@
             <span class="logo-box">
                 <span class="logo-chrome">Chrome</span> <span class="logo-shark">Shark</span>
             </span>
-            was designed for your living room so that everyone in the house could enjoy GrooveShark
+            was designed for your living room so that everyone in the house could enjoy your music
           </p>
         </div>
         <div class="col-md-4">
@@ -242,7 +270,8 @@
             <h4 class="service-heading">Easy to use</h4>
           </div>
           <p class="text-muted">
-            Simply go to <a href="http://grooveshark.com" target="_blank">Grooveshark</a>, select your songs, start
+            Simply go to <a href="http://grooveshark.com" target="_blank">Grooveshark</a>
+            or <a href="http://play.spotify.com" target="_blank">Spotify</a> , select your songs, start
             <span class="logo-box">
               <span class="logo-chrome">Chrome</span> <span class="logo-shark">Shark</span>
             </span>
@@ -290,13 +319,13 @@
           </p>
         </div>
         <div class="col-md-5">
-          <img src="http://i.imgur.com/XTmH098.jpg" alt="Chrome Shark - Interface" class="img-responsive">
+          <img src="http://i.imgur.com/U63reF7.jpg" alt="Chrome Shark - Interface" class="img-responsive">
         </div>
       </div>
       <hr>
       <div class="row features-text">
         <div class="col-md-5">
-          <img src="http://i.imgur.com/u6AcXLh.png" alt="Chrome Shark - Controls" class="img-responsive">
+          <img src="http://i.imgur.com/QFILvzF.png" alt="Chrome Shark - Controls" class="img-responsive">
         </div>
         <div class="col-md-7">
           <h3>The controls you need</h3>
@@ -306,6 +335,9 @@
           <p>
             You skipped one to many songs ? Do not panick ! Just click on the <b>Previous</b> button and you are safe&nbsp;!
           </p>
+          <small>
+            * Only works with Grooveshark
+          </small>
         </div>
       </div>
       <hr>
@@ -321,7 +353,7 @@
         </div>
         <div class="col-md-5">
           <img src="http://i.imgur.com/duBB4dl.jpg" alt="Chrome Shark - Album Art" class="img-responsive">
-          <img src="http://i.imgur.com/7nmy8kI.png" alt="Chrome Shark - Artist Summary" class="img-responsive">
+          <img src="http://i.imgur.com/8i7IinQ.png" alt="Chrome Shark - Artist Summary" class="img-responsive">
         </div>
       </div>
 
@@ -436,7 +468,7 @@
   <!-- Plugin JavaScript -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script src="js/classie.js"></script>
-  <script src="js/cbpAnimatedHeader.js"></script>
+  <!--<script src="js/cbpAnimatedHeader.js"></script>-->
 
   <!-- Custom Theme JavaScript -->
   <script src="js/agency.js"></script>
