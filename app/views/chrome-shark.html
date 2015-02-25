@@ -1,0 +1,48 @@
+<div class="chrome-shark">
+   <div class="chrome-shark-album-art-container"></div>
+   <div class="chrome-shark-meta-data">
+      <div class="chrome-shark-toolbar">
+        <span>
+          Now playing
+          <span class="separator"> | </span>
+          <a class="chrome-shark-close-button">Close</a>
+        </span>
+        <span class="logo-chrome-shark">
+            <span class="logo-chrome">Chrome</span>
+            <span class="logo-shark">Shark</span>
+        </span>
+      </div>
+
+      <div class="chrome-shark-meta-data-container">
+         <div class="chrome-shark-track-info">
+            <span>
+               <span class="chrome-shark-title">{{trackName}}</span>
+               <div class="chrome-shark-artist-container">
+                 <span class="chrome-shark-artist-prefix"> by </span>
+                 <span class="chrome-shark-artist">{{trackArtist}}</span>        </div>
+            </span>
+         </div>
+         <div class="chrome-shark-track-controls">
+            <span class="chrome-shark-time-elapsed-total">
+              <span class="chrome-shark-time-elapsed">{{timeStart}}</span>
+              <span class="separator"> / </span>
+              <span class="chrome-shark-time-total">{{timeEnd}}</span>
+            </span>
+            <div class="chrome-shark-progress-bar-container">
+               <div class="chrome-shark-progress-bar">
+                  <div class="chrome-shark-progress-bar-current-progress">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="chrome-shark-artist-bio" style="">
+            <span class="chrome-shark-artist-summary-title">Artist summary</span>
+            <p class="chrome-shark-artist-bio-summary">
+               {{trackBio}}
+            </p>
+         </div>
+         <div class="chrome-shark-track-no-info" style="display: none;">
+           <span>No songs are currently playing. <br>Close Chrome-Shark and add some ! </span></div>
+        </div>
+   </div>
+</div>
